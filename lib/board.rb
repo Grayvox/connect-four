@@ -2,9 +2,11 @@
 
 # Defines the board itself
 class Board
+  attr_reader :view
+
   private
 
-  attr_accessor :view
+  attr_writer :view
 
   public
 
