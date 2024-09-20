@@ -11,6 +11,6 @@ class Board
   public
 
   def initialize
-    @view = Array.new(7, Array.new(6))
+    @view = Array.new(6, Array.new(7, '○'))
   end
 end

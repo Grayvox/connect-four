@@ -2,6 +2,12 @@
 
 # Module containing text outputs for the game
 module Text
+  def show_board(board)
+    %(
+      #{board}
+    )
+  end
+
   def name_prompt(num)
     %(
       Alright, Player #{num == 1 ? 'One' : 'Two'}, what's your name?
