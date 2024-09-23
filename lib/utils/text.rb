@@ -11,6 +11,13 @@ module Text
     build_visual(board, result, y_coord, x_coord + 1)
   end
 
+  def start_of_turn(player_name)
+    %(
+      Alright #{player_name}, it's your turn!
+      Please provide the X and Y coordinates of where you want to place your token.
+    )
+  end
+
   def name_prompt(num)
     %(
       Alright, Player #{num == 1 ? 'One' : 'Two'}, what's your name?

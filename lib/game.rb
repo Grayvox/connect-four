@@ -23,4 +23,13 @@ class Game
     @player_one = add_player(1)
     @player_two = add_player(2)
   end
+
+  def turn_for(player)
+    puts start_of_turn(player.name)
+
+    coordinates = check_spot(player)
+    take_spot(coordinates[0], coordinates[1], player.symbol)
+
+    puts 'Good job!'
+  end
 end
